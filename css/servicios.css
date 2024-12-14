@@ -1,0 +1,461 @@
+body {
+    background-color: #ffe8c1;
+}
+
+/* Logo */
+.logo-img {
+    width: 160px;
+    height: 100px;
+    margin-left: 60px;
+  }
+  
+  /* Barra superior */
+  .top-bar {
+    background-color: #500000;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 30px 60px rgba(0, 0, 0, 1);
+  }
+  
+  /* Iconos sociales */
+  .social-icons a {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    background-color: #f8e9d2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  
+  /* Elementos del menú */
+  .nav-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    list-style: none;
+    margin-right: 10px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #5a3d1a;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    margin-left: 15px;
+    font-size: 18px;
+  }
+  
+  .nav-item a i {
+    margin-right: 5px;
+  }
+  
+  .nav-item a:hover {
+    color: #920202;
+  }
+  
+  .nav-item a.active {
+    border-bottom: 2px solid #ff8888;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Estilo base para las imágenes */
+  img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* También puedes agregar un borde o sombra si lo deseas */
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Animación de zoom cuando el cursor pasa sobre la imagen */
+  img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 10% */
+    opacity: 0.9; /* Reduce la opacidad para crear un efecto suave */
+  }
+  
+  /* Animación de giro cuando el cursor pasa sobre la imagen */
+  img:hover {
+    transform: rotate(10deg); /* Gira la imagen en 10 grados */
+    opacity: 0.9;
+  }
+  
+  /* Animación de desvanecimiento al pasar el cursor */
+  img.fade:hover {
+    opacity: 0.5; /* La imagen se desvanece al 50% */
+  }
+  
+  /* Animación de volteo (flip) cuando el cursor pasa sobre la imagen */
+  img.flip:hover {
+    transform: rotateY(180deg); /* Voltea la imagen en el eje Y */
+    opacity: 0.9;
+  }
+  
+  /* Animación de caída desde arriba */
+  img.fall:hover {
+    transform: translateY(-10px); /* Mueve la imagen hacia arriba */
+    opacity: 0.9;
+  }
+  
+  /* Efecto combinado de escala y giro (con un delay) */
+  img.scale-rotate:hover {
+    transform: scale(1.1) rotate(10deg); /* Aumenta el tamaño y gira al mismo tiempo */
+    opacity: 0.9;
+  }
+  
+  /* Animación de rotación con desvanecimiento */
+  @keyframes rotateFade {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: rotate(180deg);
+      opacity: 0.5;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicar la animación a las imágenes con la clase 'rotate-fade' */
+  img.rotate-fade:hover {
+    animation: rotateFade 2s ease-in-out; /* Aplicar la animación de 2 segundos */
+  }
+  
+  /* Sección Nosotros */
+  .nosotros-section {
+    padding: 50px;
+    background-color: #000000;
+  }
+  
+  .nosotros-text p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .nosotros-text h1 {
+    font-size: 36px;
+    color: #fff;
+  }
+  
+  .nosotros-image img {
+    border-radius: 8px;
+  }
+  
+  /* Sección Visión y Misión con fondo amarillo */
+  .vision-mision-section {
+    padding: 50px;
+    background-color: #FFD700; /* Fondo amarillo */
+    margin-top: 50px; /* Separación de la sección "Nosotros" */
+  }
+  
+  .vision-mision-container {
+    padding: 20px;
+  }
+  
+  /* Títulos */
+  .vision-mision-text h2 {
+    font-size: 32px;
+    color: #000; /* Títulos en color negro */
+    margin-bottom: 20px;
+  }
+  
+  /* Texto descriptivo */
+  .vision-mision-text {
+    color: #333; /* Texto en gris oscuro */
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Estilo de las imágenes */
+  .vision-mision-image img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+  }
+  
+  /* Fondo marrón para la sección */
+  .bg-brown {
+    background-color: #6a4e23; /* Color marrón medio */
+    margin-top: 50px; /* Agregar el mismo padding de separación como en la sección anterior */
+  }
+  
+  /* Títulos de la última sección */
+  #lo-que-nos-diferencia h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #fff; /* Blanco para los títulos */
+    font-size: 1.25rem;
+  }
+  
+  /* Texto debajo de las imágenes */
+  #lo-que-nos-diferencia p {
+    font-family: 'Verdana', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  /* Ajustar el padding de la sección para que sea más corto */
+  #lo-que-nos-diferencia {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  /* Espaciado entre las columnas */
+  #lo-que-nos-diferencia .col-md-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Efectos de animación para las imágenes */
+  img.animate__animated {
+    animation-duration: 1s;
+    animation-delay: 0.3s; /* Un pequeño retraso para la animación */
+    animation-fill-mode: both;
+  }
+  
+  /* Añadir una sombra ligera a las imágenes */
+  #lo-que-nos-diferencia img {
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Estilo para hacer que el texto sea más legible en pantallas pequeñas */
+  @media (max-width: 767px) {
+    #lo-que-nos-diferencia h3 {
+      font-size: 1.1rem; /* Títulos más pequeños en pantallas pequeñas */
+    }
+  
+    #lo-que-nos-diferencia p {
+      font-size: 0.95rem; /* Texto más pequeño en pantallas pequeñas */
+    }
+  
+    .col-md-3 {
+      margin-bottom: 20px; /* Más espacio entre las secciones en pantallas pequeñas */
+    }
+  }
+  
+  /* Sección Logros y Reconocimientos */
+  .logros-reconocimientos {
+    background-color: #4f9d9d; /* Fondo verde azulado */
+    color: #fff; /* Color blanco para el texto */
+    padding: 50px 0; /* Padding igual al de otras secciones */
+    margin-top: 50px;  /* Separación superior igual a la de otras secciones */
+    margin-bottom: 50px; /* Añadido padding de separación en la parte inferior */
+    font-family: Arial, sans-serif;
+  }
+  
+  .titulo-logros {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .logros-contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .logro {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 23%; /* Tamaño de cada sección de logro */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .logro:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento al hacer hover */
+  }
+  
+  .logro img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+  }
+  
+  .logro-texto {
+    padding: 20px;
+  }
+  
+  .logro-texto h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .logro-texto p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .boton-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .btn-logros {
+    background-color: #ff8a00; /* Color del botón */
+    color: #fff; /* Texto en blanco */
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-logros:hover {
+    background-color: #e57b00; /* Cambio de color al hacer hover */
+    transform: translateY(-5px); /* Efecto de levantamiento en el botón */
+  }
+  
+  /* Diseño adaptativo */
+  @media (max-width: 1024px) {
+    .logro {
+      width: 48%; /* Dos columnas en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logro {
+      width: 100%; /* Una columna en pantallas móviles */
+    }
+  }
+  
+  /* Estilos para el Footer */
+  .footer {
+    background-color: #500000; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-footer {
+    width: 120px;
+    height: auto;
+  }
+  
+  .footer-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 0 15px;
+  }
+  
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ff8a00; /* Color al hacer hover */
+  }
+  
+  .footer-social {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icon {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #ff8a00; /* Color al hacer hover */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  /* Estilo para hacer el footer responsivo */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-links ul li {
+      margin: 10px 0;
+    }
+  
+    .footer-social {
+      margin-top: 20px;
+    }
+  }
